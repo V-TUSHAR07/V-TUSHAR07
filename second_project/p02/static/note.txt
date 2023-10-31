@@ -1,0 +1,70 @@
+HTML:--
+
+inside the container u can save Carousel(from bootstrap)
+py-4 and px-4 is for border resizing
+fluid is used for increasing the width or filling the side gaps
+<div class="container-fluid  py-4 px-4">
+-----------------------------------------------------------------------------------------------------------------------------------
+<div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+the above code is used to create a table blocks for filling the data.
+-------------------------------------------------------------------------------------------------------------------------------------
+<from method ="post" action="/contact>
+
+this is used, how the should be submited ie., post or get
+action is used, who will handle it
+---------------------------------------------------------------------------------------------------------------------------------
+{% csrf_token %}
+
+used to create new tokens after submiting
+------------------------------------------------------------------------------------------------------------------------------
+in ur models:-
+
+class Contact(models.Model):
+     name =  models.CharField(max_length=122)
+     email = models.CharField(max_length=122)
+     phone = models.IntegerField(max_length=12)
+     desc = models.CharField(max_length=150)
+     date = models.DateField( )
+
+[def _str_(self):
+	return self.name] ------> this is for getting name in the database
+
+This should be done in the models of "app" folder.
+models.CharField(max_length=122) -----> used to set the max length while typing
+
+AFTER THAT register ur models in admin
+
+in admin put this
+   |
+  \/
+[from app01.models import Contact
+
+# Register your models here.
+admin.site.register(Contact) ]------> type this and this-------> ['app01.apps.App01Config',] in settings in instlled app
+
+and in terminal just run [python manage.py makemigrations] and [python manage.py migrate]
+makemigrations ---> create changes and store in a file
+migrate ---> apply the pending changes created by makemigrations
+
+IN THE ABOVE PROCESS, DON'T THINK....JUST DO IT
+----------------------------------------------------------------------------------------------------------------------------------
+$ U can check ur contact from admin in shell ie.,
+Open terminal and type "python manage.py shell" 
+and put from ""a01.models import Contact"" -----> for accessing all the contact from the admin
+$ Then type Contact.objects.all() ------> all the contact will be shown in the shell
+$ Then type Contact.objects.filter(name = "name in the contact") -----> finds all the name with similar name
+$ Contact.objects.filter(name = "name in the contact",phone = "999999999") -----> finds the specific name with ph number.
+eg Contact.objects.filter(name = "v",phone = "99999999999")
+  Contact.objects.filter(name = "name in the contact",phone = "00000000000")
+
+$  ins = Contact.objects.filter(name = "v",phone = "99999999999")[0]
+   ins.phone = "00000000000"
+   ins.save()
+   
+ the above is use when u want to change any data in the contact without going to admin.
+For further things u can visit "make queries django"
+$ if u want to exit then type "exit()"
+-------------------------------------------------------------------------------------------------------------------------------------------------
