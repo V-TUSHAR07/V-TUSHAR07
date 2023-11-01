@@ -1,0 +1,101 @@
+{% extends "about.html" %}
+{% block title %} Home {% endblock title %}
+{% block body %}
+
+<div class="container">
+
+  <div class="col-lg-4">
+    <img src="static/imgg/1311137.png" class = "rounded-circle" width="200" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+    <h2 class="fw-normal-middle">Kokushibo</h2>
+    <p>is a major antagonist in Demon Slayer and a member of the
+        Twelve Kizuki, holding the position of Upper Rank One.</p></div>
+      <div class="container">
+      <div class="pt-2 cont font-karla min-h-screen dark:text-gray-200 "><p class="text-middle"><meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kokushibo: Master of the Breath of the Moon</title>
+        <style>
+            /* Add your CSS styles here */
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            header {
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                padding: 20px 0;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+            section {
+                margin: 20px;
+                padding: 20px;
+            }
+            h2 {
+                font-size: 1.8rem;
+                color: #333;
+            }
+            p {
+                font-size: 1.2rem;
+                line-height: 1.5;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Kokushibo: Master of the Breath of the Moon</h1>
+        </header>
+      
+        <section>
+            <h2><strong>Introduction</strong></h2>
+            <p>Kokushibo, also known as Michikatsu Tsugikuni, is a complex character in the world of Demon Slayer, a popular manga and anime series created by Koyoharu Gotouge. He is a central figure in the "Mugen Train" arc and a member of the Twelve Kizuki, a group of the most powerful demons in the series. Kokushibo's story is one of tragedy, transformation, and the relentless pursuit of power, making him one of the most intriguing characters in the series.</p>
+        </section>
+        <section>
+          <h2><strong> Skills and Abilities</strong></h2>
+          <p>Kokushibo, also known as Michikatsu Tsugikuni, is a prominent character in the popular manga and anime series, "Demon Slayer: Kimetsu no Yaiba." He is a formidable adversary and one of the twelve Kizuki, elite demons serving under the series' main antagonist, Kibutsuji Muzan.
+
+            Kokushibo possesses extraordinary combat skills, making him a formidable and enduring opponent. He wields a unique blood demon art that allows him to manipulate the shapes of his blades and attack at incredible speed. His mastery of the "Breath of the Moon" technique, which is a variation of the series' iconic swordsmanship style, gives him unparalleled sword-fighting abilities. His immense strength, agility, and regeneration abilities make him an extremely challenging opponent for the protagonists, especially Tanjiro Kamado and his companions.</p>
+      </section>
+      <section>
+        <h2><strong> Kokushibo's Role in the "Demon Slayer" Series</strong></h2>
+        <p>Kokushibo was one of the Upper Moons, the highest-ranking demons in the Kizuki, and held the title of the First Upper Moon. He was a formidable adversary with immense strength, agility, and the ability to manipulate his blood to create deadly and versatile attacks. His unique blood demon art, the "Moon Breathing," made him an even more formidable opponent.</p>
+    </section>
+
+    
+        <!-- Add more sections for each topic of your essay (I-VII) -->
+    
+        <section>
+            <h2><strong>Conclusion</strong></h2>
+            <p>  Kokushibo's character in "Demon Slayer: Kimetsu no Yaiba" is a complex and tragic figure who grapples with the allure of power, the nature of identity, blind loyalty, and the potential for redemption. His story serves as a cautionary tale and a source of reflection on the human condition. The series' exploration of these themes through Kokushibo's character adds depth and complexity to the narrative, making him one of the most compelling characters in the world of demon slayers and demons. Kokushibo's character reminds us that even in the darkest of circumstances, there is always the possibility for change and redemption.</p>
+        </section>
+        <div class="container">
+            <form method="post" action="/v33">
+                {% csrf_token %}
+                <div class="form-group mx-4 px-4">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="name" class="form-control" id="name" name="name" placeholder="Enter the name">
+                  </div>
+                <div class="form-group mx-4 px-4">
+                    <label for="desc" class="form-label">Comments</label>
+                    <textarea class="form-control" id="desc" rows="3" name="desc"
+                        placeholder="Comment your thoughts"></textarea>
+                </div>
+                <div class="d-grid gap-2 d-md-block mx-4 px-4 py-2">
+                    <button class="btn btn-primary" type="submit">Submit.</button>
+                </div>
+            </form>
+
+        </div>
+        <footer>
+            <p>&copy; 2023 Tushar</p>
+        </footer>
+    </body>
+    </html>
+
+</div>
+<div class="container-fluid px-0" action="/v33">
+    <a class="btn btn-outline-dark btn btn-danger mx-2 my-2" type="submit"href="/a" ><-Back</button></a>
+  </div>
+{% endblock body %}

@@ -1,0 +1,110 @@
+{% extends "home.html" %}
+{% block title %} Home {% endblock title %}
+{% block body %}
+
+<div class="container">
+
+  <div class="col-lg-4">
+    <img src="static/imgg/1337465.png" class = "rounded-circle" width="200" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+    <h2 class="fw-normal-middle">Zenitsu</h2>
+    <p>Zenitsu is a powerful Demon Slayer and a member of the Demon Slayer Corps. Although he was originally roped into joining the
+        Corps by his mentor Jigoro Kuwajima, Zenitsu later realizes the importance of the Demon Slayer Corps.</p></div>
+      <div class="container">
+      <div class="pt-2 cont font-karla min-h-screen dark:text-gray-200 "><p class="text-middle"><meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zenitsu: Master of the Thunder Breathing</title>
+        <style>
+            /* Add your CSS styles here */
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            header {
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                padding: 20px 0;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+            section {
+                margin: 20px;
+                padding: 20px;
+            }
+            h2 {
+                font-size: 1.8rem;
+                color: #333;
+            }
+            p {
+                font-size: 1.2rem;
+                line-height: 1.5;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Zenitsu: Master of the Thunder Breathing</h1>
+        </header>
+      
+        <section>
+            <h2><strong>Introduction</strong></h2>
+            <p>Zenitsu Agatsuma, a central character in the popular anime and manga series "Demon Slayer: Kimetsu no Yaiba," is a complex and multifaceted character who undergoes significant growth and transformation throughout the story. Zenitsu's journey is one of self-discovery, courage, and the power of unwavering determination. In this essay, we will delve into the character of Zenitsu and explore his evolution as a character in the series.</p>
+        </section>
+        <section>
+          <h2><strong> Skills and Abilities</strong></h2>
+          <p>Zenitsu is known for his incredible agility and speed, which he honed through his rigorous training as a Demon Slayer. His Thunder Breathing techniques allow him to move with astonishing swiftness, making him a formidable opponent in battle. Zenitsu's skill with the Breath of Thunder is particularly impressive, as he can unleash powerful lightning-based attacks against demons.
+
+            However, what truly sets Zenitsu apart is his extraordinary sense of hearing. He possesses acute auditory perception, allowing him to detect even the faintest of sounds. This skill becomes a crucial asset during battles, enabling him to sense the presence and movements of demons, even when they are hidden or silent.
+            
+            Zenitsu's character development is also reflected in his personal growth and inner strength. Over time, he learns to overcome his fear and hesitation, further enhancing his skills and making him a more reliable and courageous member of the Demon Slayer Corps.</p>
+      </section>
+      <section>
+        <h2><strong> Zenitsu's Role in the "Demon Slayer" Series</strong></h2>
+        <p> Zenitsu is initially introduced as a timid and fearful character, which creates a strong contrast with the series' other characters. This contrast highlights his growth and development throughout the series.
+
+            One of Zenitsu's primary roles is comic relief. His exaggerated expressions, cowardly behavior, and comedic outbursts provide a balance to the intense and often grim storyline. Zenitsu's humorous moments offer viewers much-needed breaks from the tension and action, making him a beloved character among fans.
+            
+            However, Zenitsu's character arc also involves personal growth and courage. Over time, he gains self-confidence, becomes more resilient, and learns to face his fears. This transformation is emblematic of the broader theme of the series, where characters must confront their inner demons and grow stronger to overcome external challenges.
+            
+            Zenitsu's character serves as a symbol of perseverance and the capacity for change. His evolution from a frightened individual to a brave warrior inspires viewers and underscores the importance of inner strength and personal development. In "Demon Slayer," Zenitsu's role is not just about providing laughter but also about demonstrating that even the most fearful can find their inner courage and make a difference.</p>
+    </section>
+
+    
+        <!-- Add more sections for each topic of your essay (I-VII) -->
+    
+        <section>
+            <h2><strong>Conclusion</strong></h2>
+            <p>   Zenitsu Agatsuma's character arc in "Demon Slayer: Kimetsu no Yaiba" is a compelling story of personal growth and the triumph of courage over fear. From a timid, fearful individual, Zenitsu evolves into a formidable demon slayer, driven by determination and self-discovery. His transformation serves as a source of inspiration to viewers, reminding them that anyone can overcome their fears and find their inner strength. Zenitsu's journey is a testament to the power of persistence, mentorship, and the support of friends in achieving personal growth and self-realization. His character exemplifies the timeless message that courage can be found within, even in the most unlikely of individuals.</p>
+        </section>
+        <div class="container">
+            <form method="post" action="/v4">
+                {% csrf_token %}
+                <div class="form-group mx-4 px-4">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="name" class="form-control" id="name" name="name" placeholder="Enter the name">
+                  </div>
+                <div class="form-group mx-4 px-4">
+                    <label for="desc" class="form-label">Comments</label>
+                    <textarea class="form-control" id="desc" rows="3" name="desc"
+                        placeholder="Comment your thoughts"></textarea>
+                </div>
+                <div class="d-grid gap-2 d-md-block mx-4 px-4 py-2">
+                    <button class="btn btn-primary" type="submit">Submit.</button>
+                </div>
+            </form>
+
+        </div>
+    
+        <footer>
+            <p>&copy; 2023 Tushar</p>
+        </footer>
+    </body>
+    </html>
+
+</div>
+<div class="container-fluid px-0" action="/v4">
+    <a class="btn btn-outline-dark btn btn-danger mx-2 my-2" type="submit"href="/" ><-Back</button></a>
+  </div>
+{% endblock body %}

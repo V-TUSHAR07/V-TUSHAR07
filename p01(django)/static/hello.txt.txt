@@ -1,0 +1,65 @@
+Documentation and examples for Bootstrap’s powerful, responsive navigation header, the navbar. Includes support for branding, navigation, and more, including support for our collapse plugin.
+
+ads via CarbonLearn DNS once and for all. Pre-sale Limited Offer!
+ads via Carbon
+On this page
+How it works
+Supported content
+Brand
+Text
+Image
+Image and text
+Nav
+Forms
+Text
+Color schemes
+Containers
+Placement
+Scrolling
+Responsive behaviors
+Toggler
+External content
+Offcanvas
+CSS
+Variables
+Sass variables
+Sass loops
+How it works 
+Here’s what you need to know before getting started with the navbar:
+
+Navbars require a wrapping .navbar with .navbar-expand{-sm|-md|-lg|-xl|-xxl} for responsive collapsing and color scheme classes.
+Navbars and their contents are fluid by default. Change the container to limit their horizontal width in different ways.
+Use our spacing and flex utility classes for controlling spacing and alignment within navbars.
+Navbars are responsive by default, but you can easily modify them to change that. Responsive behavior depends on our Collapse JavaScript plugin.
+Ensure accessibility by using a <nav> element or, if using a more generic element such as a <div>, add a role="navigation" to every navbar to explicitly identify it as a landmark region for users of assistive technologies.
+Indicate the current item by using aria-current="page" for the current page or aria-current="true" for the current item in a set.
+New in v5.2.0: Navbars can be themed with CSS variables that are scoped to the .navbar base class. .navbar-light has been deprecated and .navbar-dark has been rewritten to override CSS variables instead of adding additional styles.
+The animation effect of this component is dependent on the prefers-reduced-motion media query. See the reduced motion section of our accessibility documentation.
+Supported content 
+Navbars come with built-in support for a handful of sub-components. Choose from the following as needed:
+
+.navbar-brand for your company, product, or project name.
+.navbar-nav for a full-height and lightweight navigation (including support for dropdowns).
+.navbar-toggler for use with our collapse plugin and other navigation toggling behaviors.
+Flex and spacing utilities for any form controls and actions.
+.navbar-text for adding vertically centered strings of text.
+.collapse.navbar-collapse for grouping and hiding navbar contents by a parent breakpoint.
+Add an optional .navbar-scroll to set a max-height and scroll expanded navbar content.
+Here’s an example of all the sub-components included in a responsive light-themed navbar that automatically collapses at the lg (large) breakpoint.
+
+Navbar
+Home
+Link
+Dropdown 
+Disabled
+Search
+HTML
+
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse

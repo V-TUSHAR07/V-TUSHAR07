@@ -1,0 +1,117 @@
+{% extends "home.html" %}
+{% block title %} Home {% endblock title %}
+{% block body %}
+
+<div class="container">
+
+  <div class="col-lg-4">
+    <img src="static\imgg\12.jpg" class = "rounded-circle" width="200" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+    <h2 class="fw-normal-middle">Akaza</h2>
+    <p>is one of the 12 Kizuki. He is a stubborn demon who respects the
+    strong and despises the
+    weak.</p></div>
+      <div class="container">
+      <div class="pt-2 cont font-karla min-h-screen dark:text-gray-200 "><p class="text-middle"><meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Akaza: One Of The 12 Kizuki</title>
+        <style>
+            /* Add your CSS styles here */
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            header {
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                padding: 20px 0;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+            section {
+                margin: 20px;
+                padding: 20px;
+            }
+            h2 {
+                font-size: 1.8rem;
+                color: #333;
+            }
+            p {
+                font-size: 1.2rem;
+                line-height: 1.5;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Akaza: One Of The 12 Kizuki</h1>
+        </header>
+      
+        <section>
+            <h2><strong>Introduction</strong></h2>
+            <p>Akaza is one of the compelling and complex characters in the popular manga and anime series "Demon Slayer: Kimetsu no Yaiba." As a member of the Twelve Kizuki, a group of elite demons, Akaza stands out due to his multifaceted personality, tragic backstory, and inner conflicts. In this essay, we will explore Akaza's character, his role in the series, and the reasons behind his popularity among fans.</p>
+        </section>
+        <section>
+          <h2><strong> Skills and Abilities</strong></h2>
+          <p>Akaza, a prominent character in "Demon Slayer: Kimetsu no Yaiba," possesses a formidable array of skills and abilities that make him a formidable opponent. As one of the Upper Moons among the Twelve Kizuki, his powers are nothing short of extraordinary.
+
+            First and foremost, Akaza boasts immense physical strength and agility, which he combines with exceptional combat skills. His hand-to-hand combat abilities are particularly impressive, allowing him to go toe-to-toe with skilled demon slayers like Tanjiro Kamado and Kyojuro Rengoku. Akaza's speed and precision in his attacks make him a deadly adversary.
+            
+            One of his signature techniques is the "Destructive Death: Shinokuni," a powerful move that releases an intense wave of energy capable of obliterating anything in its path. This attack reflects his mastery over demonic powers, making him a formidable force on the battlefield.
+            
+            Additionally, Akaza has the ability to regenerate and heal quickly, making it difficult for his opponents to inflict lasting damage. This resilience, combined with his offensive prowess, presents a significant challenge for demon slayers.
+            
+            In conclusion, Akaza's skills and abilities as a demon make him a formidable antagonist in "Demon Slayer." His combat prowess, regenerative abilities, and powerful techniques contribute to his reputation as one of the most dangerous demons in the series.</p>
+      </section>
+      <section>
+        <h2><strong> Akaza's Role in the "Demon Slayer" Series</strong></h2>
+        <p>As a member of the Twelve Kizuki, Akaza is designated as the Upper Moon Three, signifying his position as one of the highest-ranking demons. His primary role within this group is to act as one of Muzan's most powerful and trusted enforcers.
+
+            Akaza's role involves executing Muzan's orders, which often include hunting down and eliminating threats to the demons' existence, particularly Demon Slayers and anyone who opposes Muzan's plans. His strength and combat prowess make him a formidable adversary, and he plays a crucial part in the series' action and conflict.
+            
+            Throughout the series, Akaza's interactions with other members of the Twelve Kizuki and his involvement in various story arcs help shape the narrative, providing tension and driving the plot forward. His character's complexity and the depth of his role as a demon within the Twelve Kizuki contribute to the overall intrigue and drama within the "Demon Slayer" series.</p>
+    </section>
+
+    
+        <!-- Add more sections for each topic of your essay (I-VII) -->
+    
+        <section>
+            <h2><strong>Conclusion</strong></h2>
+            <p>Akaza, a prominent character in "Demon Slayer: Kimetsu no Yaiba," holds a significant role within the Twelve Kizuki, the elite group of demons led by Muzan Kibutsuji. As a member of the Twelve Kizuki, Akaza is designated as the Upper Moon Three, signifying his position as one of the highest-ranking demons. His primary role within this group is to act as one of Muzan's most powerful and trusted enforcers.
+
+                Akaza's role involves executing Muzan's orders, which often include hunting down and eliminating threats to the demons' existence, particularly Demon Slayers and anyone who opposes Muzan's plans. His strength and combat prowess make him a formidable adversary, and he plays a crucial part in the series' action and conflict.
+                
+                Throughout the series, Akaza's interactions with other members of the Twelve Kizuki and his involvement in various story arcs help shape the narrative, providing tension and driving the plot forward. His character's complexity and the depth of his role as a demon within the Twelve Kizuki contribute to the overall intrigue and drama within the "Demon Slayer" series.    </p>
+        </section>
+        <div class="container">
+            <form method="post" action="/v2">
+                {% csrf_token %}
+                <div class="form-group mx-4 px-4">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="name" class="form-control" id="name" name="name" placeholder="Enter the name">
+                  </div>
+                <div class="form-group mx-4 px-4">
+                    <label for="desc" class="form-label">Comments</label>
+                    <textarea class="form-control" id="desc" rows="3" name="desc"
+                        placeholder="Comment your thoughts"></textarea>
+                </div>
+                <div class="d-grid gap-2 d-md-block mx-4 px-4 py-2">
+                    <button class="btn btn-primary" type="submit">Submit.</button>
+                </div>
+            </form>
+
+        </div>
+    
+        <footer>
+            <p>&copy; 2023 Tushar</p>
+        </footer>
+    </body>
+    </html>
+
+</div>
+<div class="container-fluid px-0" action="/v2">
+    <a class="btn btn-outline-dark btn btn-danger mx-2 my-2" type="submit"href="/"><-Back</button></a>
+  </div>
+{% endblock body %}
